@@ -11,12 +11,13 @@ public class Conductor {
     private boolean ocupado = false;
     private ArrayList<Byte> valoraciones = new ArrayList<>();
 
-    public Conductor()
-    {}
+
 
     public Conductor(String nombre) {
         this.nombre = nombre;
     }
+
+
 
     public String getNombre() {
         return this.nombre;
@@ -51,7 +52,7 @@ public class Conductor {
         this.calcularValoracionMedia();
     }
 
-    private double calcularValoracionMedia() {
+    public double calcularValoracionMedia() {
         int sumaTotalValoraciones = 0;
         for (byte valoracion : valoraciones) {
             sumaTotalValoraciones += valoracion;

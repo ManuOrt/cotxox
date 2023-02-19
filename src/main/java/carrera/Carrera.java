@@ -2,7 +2,7 @@ package carrera;
 
 import conductores.Conductor;
 import conductores.PoolConductores;
-import tarifa.Tarifa;
+import tarifas.Tarifa;
 
 public class Carrera {
 
